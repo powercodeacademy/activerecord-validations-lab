@@ -36,10 +36,58 @@ jspm_packages
 /.bundle
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
+/db/*.sqlite3*
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
 /tmp
+config/secrets.yml
+
+# === Ruby & Rails ===
+/.byebug_history
+/.pry_history
+/.env
+/.env.*
+/.ruby-version
+/.ruby-gemset
+/coverage/
+/public/assets/
+/public/packs/
+/public/packs-test/
+/public/system/
+/storage/
+/tmp/
+/vendor/bundle/
+/vendor/cache/
+/vendor/rails/
+/spec/examples.txt
+/spec/tmp/
+/test/tmp/
+/test/version_tmp/
+/yarn-error.log
+
+# === Editor & OS ===
+.idea/
+.vscode/
+*.swp
+*~
+.project
+.classpath
+.c9/
+*.sublime-workspace
+*.sublime-project
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+Icon?
+
+# === Sensitive files ===
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.credentials.yml.enc
+/config/master.key
